@@ -52,7 +52,6 @@
 				this[j] = temp;
 			}
 		}
-		 
 
 		var the_images = new Array();
 		var pre_images = new Array();
@@ -70,7 +69,6 @@
 		document.getElementById('zapisanje').style.borderColor="#000";
 		document.getElementById('zapisanje').style.borderWidth="1px";
 		prepbaza=[];
-		baza=[];
 		the_images=[];
 		pre_images=[];
 		brreci = document.getElementById("brreci").value;
@@ -78,7 +76,7 @@
 		baza=baza.split(",");
 		baza.randomize();
 		brzina = (document.getElementById("ranges").value)*100;
-		sours = document.getElementById("sours").value;
+		var sours = document.getElementById("sours").value;
 
 			if(document.getElementById('iz1').checked) {
 				pre_images = sours.toLowerCase();
@@ -131,7 +129,7 @@
 		  document.getElementById('divrev').style.color="#000"; 
 		var divrevx=document.getElementById('divrev').innerHTML;
 		var divodgx=document.getElementById('zapisanje').innerHTML;
-		  if (divrevx=divodgx) {
+		  if (divrevx==divodgx) {
 			document.getElementById('zapisanje').style.borderColor="#afa";
 			document.getElementById('zapisanje').style.borderWidth="2px";
 		  } else {
